@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <!--EmailJs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("Zhj5w0uEgnnf7Q14u"); // Replace with your EmailJS Public Key
+        })();
+    </script>
+   
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>Pankaj Sapkal</span></a>
+
+        <!--navigation header links starts here -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!--Menu icon pasting from https://fontawesome.com/ -->
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <a href="https://www.linkedin.com/in/pankaj-sapkal-435374339/"><button class="visit-btn">Linkdin</button></a>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="/assets/pic.jpg" alt="">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Pankaj Sapkal</h1>
+                    <span class="typing-gradient">
+                        <span class="typed-text"></span>
+                    </span>
+                </div>
+
+                <div class="btn-group">
+                    <div id="download-cv" class="btn">Download CV</div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experties</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Full Stack Java Developer</span>  
+                    <p>As Java Developer I'm familiar with Spring Boot, REST APIs, PostgreSQL, Hibernate and JSP</p>
+                </div>
+
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Web Developer</span>
+                    <p>As Web Developer I'm familiar with HTML, CSS, JavaScript, and Angular.</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- section for projects starts here -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Major Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="/assets/picbloom.jpg" alt="">
+                <h3>Picbloom</h3>
+                <p>
+Picbloom is a modern, responsive, and user-friendly photo gallery and album management system.</p>
+                <div class="btn-group">  
+                    <div class="btn"><a href="https://github.com/Pankaj4532/Picbloom---Image-Management-System">GitHub Repo</a> </div>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <img src="/assets/Omnera.jpg" alt="">
+                <h3>Omnera</h3>
+                <p>Omnera is a blog platform for creating, sharing, and managing posts seamlessly.</p>
+                <div class="btn-group">                   
+                    <div class="btn"><a href="https://github.com/Pankaj4532/Omnera">Github Repo</a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section for contact start here-->
+    <section class="contact" id="contact">
+        <form class="input-box" id="contact-form">
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="input">
+                <input type="text" name="name" placeholder="name" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input">
+                <input type="email" name="email" placeholder="email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input">
+                <input type="text" name="subject" placeholder="subject" required>
+                <i class="fa-solid fa-message"></i>
+            </div>
+
+            <div class="input">
+                <textarea name="message" placeholder="message" required></textarea>
+                <i class="fa-solid fa-message"></i>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+    </section>
+
+    <!--footer section starts here-->
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">&copy; All Rights Reserved | Pankaj Sapkal</p>
+    </footer>
+    <!--Footer ends here-->
+    
+    <!--Javascript linking-->
+    <script src="script.js"></script>
+</body>
+
+</html>
