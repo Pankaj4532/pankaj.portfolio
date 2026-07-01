@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Pankaj Sapkal — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-     <!--EmailJs-->
+    <!--EmailJs-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         (function () {
             emailjs.init("Zhj5w0uEgnnf7Q14u"); // Replace with your EmailJS Public Key
         })();
     </script>
-   
 </head>
 
 <body>
 
     <header class="header">
-        <a href="#" class="logo"><span>Pankaj Sapkal</span></a>
+        <a href="#" class="logo"><span class="logo-tag">~/</span>pankaj-sapkal</a>
 
-        <!--navigation header links starts here -->
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Expertise</a></li>
@@ -30,26 +30,29 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <!--Menu icon pasting from https://fontawesome.com/ -->
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <a href="https://www.linkedin.com/in/pankaj-sapkal-435374339/"><button class="visit-btn">Linkdin</button></a>
+        <a href="https://www.linkedin.com/in/pankaj-sapkal-435374339/"><button class="visit-btn">LinkedIn</button></a>
     </header>
 
     <section id="about" class="about">
         <div class="about-container">
-            <img src="assets/pic.jpg" alt="">
+            <div class="photo-frame">
+                <img src="assets/pic.jpg" alt="Pankaj Sapkal">
+                <span class="frame-badge">READY</span>
+            </div>
             <div class="info-box">
                 <div class="text">
-                    <h3>Hi, I'm</h3>
+                    <span class="eyebrow">// hi, i'm</span>
                     <h1>Pankaj Sapkal</h1>
                     <span class="typing-gradient">
                         <span class="typed-text"></span>
                     </span>
                 </div>
 
-                <div class="btn-group">
-                    <div id="download-cv" class="btn">Download CV</div>
-                
+                <div class="status-row">
+                    <span class="pill pill-pass"><i class="fa-solid fa-circle-check"></i> BUILD: PASSING</span>
+                    <span class="pill pill-info"><i class="fa-solid fa-flask"></i> TESTS: 1000+ CASES AUTHORED</span>
+                    <span class="pill pill-info"><i class="fa-solid fa-code-branch"></i> OPEN TO WORK</span>
                 </div>
             </div>
         </div>
@@ -57,108 +60,130 @@
 
 
     <section id="experience" class="experience">
-        <h2 class="section-title">Experties</h2>
+        <h2 class="section-title">Expertise</h2>
+        <p class="section-sub">Two disciplines, one workflow — I build it, then I break it.</p>
         <div class="experience-info">
             <div class="grid">
                 <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Full Stack Java Developer</span>  
-                    <p>As Java Developer I'm familiar with Spring Boot, REST APIs, PostgreSQL, Hibernate and JSP</p>
+                    <div class="card-top">
+                        <i class="fa-solid fa-code"></i>
+                        <span class="tag">dev</span>
+                    </div>
+                    <span class="card-title">Full Stack Java Developer</span>
+                    <p>Spring Boot, REST APIs, PostgreSQL, Hibernate, JSP, React.js — building end-to-end applications from schema to UI.</p>
+                    <div class="stack-tags">
+                        <span>Spring Boot</span><span>React.js</span><span>MySQL</span><span>JWT</span>
+                    </div>
                 </div>
-
 
                 <div class="grid-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <span>Web Developer</span>
-                    <p>As Web Developer I'm familiar with HTML, CSS, JavaScript, and Angular.</p>
+                    <div class="card-top">
+                        <i class="fa-solid fa-vial-circle-check"></i>
+                        <span class="tag">qa</span>
+                    </div>
+                    <span class="card-title">Manual QA Engineer</span>
+                    <p>Functional, Regression, and UAT testing with RTM coverage, defect lifecycle management in Jira, and SQL validation.</p>
+                    <div class="stack-tags">
+                        <span>Test Design</span><span>RTM</span><span>Jira</span><span>SQL Validation</span>
+                    </div>
+                </div>
+
+                <div class="grid-card">
+                    <div class="card-top">
+                        <i class="fa-solid fa-file-code"></i>
+                        <span class="tag">web</span>
+                    </div>
+                    <span class="card-title">Web Developer</span>
+                    <p>Responsive, accessible interfaces built with HTML, CSS, and JavaScript — the layer users actually touch.</p>
+                    <div class="stack-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
                 </div>
             </div>
-            
         </div>
-
     </section>
 
-    <!-- section for projects starts here -->
     <section id="projects" class="projects">
         <h2 class="section-title">Recent Major Projects</h2>
+        <p class="section-sub">Self-directed builds, tested the same way I'd test anyone else's code.</p>
 
         <div class="projects-grid">
             <div class="project-card">
-                <img src="assets/picbloom.jpg" alt="">
+                <div class="project-media">
+                    <img src="assets/picbloom.jpg" alt="Picbloom">
+                    <span class="pill pill-pass project-badge">DEPLOYED</span>
+                </div>
                 <h3>Picbloom</h3>
-                <p>
-Picbloom is a modern, responsive, and user-friendly photo gallery and album management system.</p>
-                <div class="btn-group">  
-                    <div class="btn"><a href="https://github.com/Pankaj4532/Picbloom---Image-Management-System">GitHub Repo</a> </div>
+                <p>A modern, responsive photo gallery and album management system with secure upload and access control.</p>
+                <div class="stack-tags">
+                    <span>Spring Boot</span><span>PostgreSQL</span><span>React.js</span><span>JWT</span>
+                </div>
+                <div class="btn-group">
+                    <a class="btn" href="https://github.com/Pankaj4532/Picbloom---Image-Management-System" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> GitHub Repo
+                    </a>
                 </div>
             </div>
 
-
             <div class="project-card">
-                <img src="assets/Omnera.jpg" alt="">
+                <div class="project-media">
+                    <img src="assets/Omnera.jpg" alt="Omnera">
+                    <span class="pill pill-pass project-badge">DEPLOYED</span>
+                </div>
                 <h3>Omnera</h3>
-                <p>Omnera is a blog platform for creating, sharing, and managing posts seamlessly.</p>
-                <div class="btn-group">                   
-                    <div class="btn"><a href="https://github.com/Pankaj4532/Omnera">Github Repo</a> </div>
+                <p>A blog platform for creating, sharing, and managing posts seamlessly, with server-side rendering.</p>
+                <div class="stack-tags">
+                    <span>Spring Boot</span><span>Hibernate</span><span>Thymeleaf</span>
+                </div>
+                <div class="btn-group">
+                    <a class="btn" href="https://github.com/Pankaj4532/Omnera" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> GitHub Repo
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Section for contact start here-->
     <section class="contact" id="contact">
-        <form class="input-box" id="contact-form">
+        <div class="input-box">
             <h2 class="section-title">Contact Me</h2>
+            <p class="section-sub">Have a role, project, or question? Drop a message — I reply personally.</p>
+            <form id="contact-form">
+                <div class="input">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
 
-            <div class="input">
-                <input type="text" name="name" placeholder="name" required>
-                <i class="fa-solid fa-user"></i>
-            </div>
+                <div class="input">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <i class="fa-solid fa-message"></i>
+                </div>
 
-            <div class="input">
-                <input type="email" name="email" placeholder="email" required>
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="input">
-                <input type="text" name="subject" placeholder="subject" required>
-                <i class="fa-solid fa-message"></i>
-            </div>
+                <div class="input">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <i class="fa-solid fa-message"></i>
+                </div>
 
-            <div class="input">
-                <textarea name="message" placeholder="message" required></textarea>
-                <i class="fa-solid fa-message"></i>
-            </div>
-
-            <button type="submit" class="btn">Submit</button>
-        </form>
-
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <!--footer section starts here-->
     <footer>
         <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <p class="copyright">&copy; All Rights Reserved | Pankaj Sapkal</p>
     </footer>
-    <!--Footer ends here-->
-    
-    <!--Javascript linking-->
+
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
-
